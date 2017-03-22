@@ -1,5 +1,10 @@
 <template>
   <div class="hello">
+
+
+   <p v-html="$t('message.hello')"></p>
+
+
     <el-button>Hello Yet Another Team Project</el-button>
   </div>
 </template>
@@ -7,6 +12,8 @@
 <script>
 export default {
   name: 'hello',
+  created () {
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
